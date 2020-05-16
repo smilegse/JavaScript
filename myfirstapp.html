@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JavaScript App</title>
+    
+</head>
+
+<body>
+    <button type="button" onclick="getDate()"> 
+        Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function getDate(){
+            document.getElementById('demo').innerHTML = Date()
+        }
+
+        
+    </script>
+</body>
+
+</html>
