@@ -12,7 +12,7 @@
     <p>JavaScript can change Html attribute values.</p>
     <p>In this case JavaScript changes the value of the src</p>
 
-    <button onclick="document.getElementById('myImage').src='/images/pic_bulbon.gif'">
+    <!-- <button onclick="document.getElementById('myImage').src='/images/pic_bulbon.gif'">
         TurnOn the Light
     </button>
 
@@ -20,7 +20,23 @@
 
     <button onclick="document.getElementById('myImage').src='/images/pic_bulboff.gif'">
         TurnOff the Light
-    </button>
+    </button> -->
+
+    <button onclick="lightOnOff('on')"> TurnOn the Light </button>
+
+    <img id="myImage" src="/images/pic_bulboff.gif" style="width: 100px;" alt="">
+
+    <button onclick="lightOnOff('off')"> TurnOff the Light </button>
+
+    <script>
+        function lightOnOff(value) {
+            if (value === "on") {
+                document.getElementById('myImage').src = '/images/pic_bulbon.gif';
+            } else {
+                document.getElementById('myImage').src = '/images/pic_bulboff.gif';
+            }
+        }
+    </script>
 
 </body>
 
