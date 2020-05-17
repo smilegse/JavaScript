@@ -24,7 +24,8 @@
 
     <button onclick="lightOnOff('on')"> TurnOn the Light </button>
 
-    <img id="myImage" src="/images/pic_bulboff.gif" style="width: 100px;" alt="">
+    <img id="myImage" src="/images/pic_bulboff.gif" style="width: 100px; border: 2px darkblue solid; padding: 5px;"
+        alt="">
 
     <button onclick="lightOnOff('off')"> TurnOff the Light </button>
 
@@ -32,8 +33,12 @@
         function lightOnOff(value) {
             if (value === "on") {
                 document.getElementById('myImage').src = '/images/pic_bulbon.gif';
+                document.getElementById("myImage").style.border = "2px darkred solid";
+                document.getElementById("myImage").style.padding = "5px";
             } else {
                 document.getElementById('myImage').src = '/images/pic_bulboff.gif';
+                document.getElementById("myImage").style.border = "2px darkblue solid";
+                document.getElementById("myImage").style.padding = "5px";
             }
         }
     </script>
