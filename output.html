@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="width: 900px; margin-top:10px; margin-bottom: 10px; margin-left: auto; margin-right: auto; padding: 10px;">
+
+
+
+    <h1>JavaScript Display Possibilities</h1>
+
+    <div style="margin-bottom: 10px; padding: 10px; border: 1px solid darkslateblue">
+        <h2>Using innerHTML</h2>
+        <hr>
+        <p id="myPara">The quick brown fox jumps over the lazy dog.</p>
+        <button onclick="onButtonClick()"> Button Click Paragraph Change</button>
+    </div>
+
+    <div style="margin-bottom: 10px; padding: 10px; border: 1px solid darkslateblue">
+        <h2>Using window.alert()L</h2>
+        <hr>
+        <button onclick="onButtonAlert()"> Display Alert</button>
+    </div>
+
+    <div style="margin-bottom: 10px; padding: 10px; border: 1px solid darkslateblue">
+        <h2>Using console.log()</h2>
+        <hr>
+        <button onclick="onConsolLog()"> console.log </button>
+    </div>
+
+
+    <div style="margin-bottom: 10px; padding: 10px; border: 1px solid darkslateblue">
+        <h2>JavaScript Print</h2>
+        <hr>
+        <button onclick="window.print()"> Print</button>
+    </div>
+
+    <div style="margin-bottom: 10px; padding: 10px; border: 1px solid darkslateblue">
+        <h2>Using document.write()</h2>
+        <hr>
+    </div>
+
+
+
+    <script>
+        document.write('Document Write: ' + 100 * 50);
+
+        function onButtonClick() {
+            document.getElementById('myPara').innerHTML = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eveniet delectus itaque nesciunt corporis laboriosam dignissimos recusandae ex! Asperiores illo minima nihil. Tempore ex ratione recusandae. Magni iste sit laborum."
+        }
+        function onButtonAlert() {
+            alert('This is displayed using alert.')
+        }
+
+        let count = 0;
+        function onConsolLog() {
+            count += 1;
+            console.log("count: " + count);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
