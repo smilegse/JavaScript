@@ -89,4 +89,9 @@ var cars = [
   cars.sort(function(a, b){return a.year - b.year}); 
 
   console.log(cars);
+
+  var mypoints = points.map(function(point){
+      return  point * 2;
+  });
   
+console.log(mypoints.toString())
